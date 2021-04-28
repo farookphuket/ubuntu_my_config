@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>please run command line by line </title>
+
+    <style>
+body{
+    background-color:#e7e7e7;
+}
+.container{
+    margin:0 auto;
+    width:85%;
+    background-color:white;
+
+}
+h2 {
+    text-align:center;
+    color:blue;
+    text-decoration:underline;
+}
+.container div{
+    padding:10px 0 10px;
+
+}
+
+textarea{
+    color:green;
+    font-weight:bold;
+    font-size:18px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h2>
+    Please run this command line by line
+        </h2>
+        <p>
+        dear friends! when you see this window it mean that you have install mysql 
+        and there's time that auto script cannot be run it need the command from 
+        you the command below is what you have to put into your terminal. please 
+        run the command line by line one at a time
+        </p>
+        <p>you can replace the password with your custom password just similar 
+        to that given password in the ('single quote')</p>
+        <div style="text-align:center;">
+            <textarea cols="100" disabled
+            rows="10">-- RUN THE BELOW CODE LINE BY LINE IN YOUR TERMINAL --
+
+sudo mysql
+use mysql; 
+ALTER user 'root'@'localhost' IDENTIFIED BY mysql_native_password WITH '<!--Password1234-->'; 
+FLUSH PRIVILEGES; 
+quit; 
+            </textarea>
+        </div>
+        <p>
+        if for some reason you've got an error "error 1045 (28000): access denied for user 'root'@'localhost' (using password: yes) "  please click <a target="_blank" href="https://stackoverflow.com/questions/21944936/error-1045-28000-access-denied-for-user-rootlocalhost-using-password-y">Here</a> but the below step maybe help.
+        </p>
+        <div style="text-align:center;">
+<textarea cols="100" rows="10">--- Copy the below code to your terminal --
+
+sudo systemctl stop mysql 
+sudo mysqld_safe --skip-grant-tables --skip-networking &
+
+</textarea>
+
+        </div>
+        <p>open the new terminal window then run the below command</p>
+
+        <div style="text-align:center;">
+<textarea cols="100" rows="10">------ run below command in the new terminal window ---
+
+mysql -u root
+FLUSH PRIVILEGES;
+ALTER user 'root'@'localhost' IDENTIFIED BY '<!--Password1234-->';
+quit;
+</textarea>
+        </div>
+        <p>now close all of the terminal window and re-open again then run </p>
+
+        <div style="text-align:center;">
+<textarea cols="100" rows="10">------ run below command in the same above terminal window ---
+
+sudo pkill mysql 
+sudo killall mysql 
+sudo systemctl start mysql 
+</textarea>
+        </div>
+<p>now let login to mysql again with the command 'mysql -u root -p' 
+enter the password(everything in bold text) <b> &lt;!--Password1234--&gt;</b>  
+it's should be working now.</p>
+    </div>
+</body>
+</html>
