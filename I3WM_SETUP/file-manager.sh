@@ -27,8 +27,9 @@ ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH
 
 cp $ZSH_DIR/.zshrc ~/
 
-sudo cp -r $ZSH_DIR/zsh /user/share
-sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /user/share
+# copy zsh config to /usr/share
+sudo cp -r $ZSH_DIR/zsh /usr/share
+sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share
 
 sleep 5s 
 
