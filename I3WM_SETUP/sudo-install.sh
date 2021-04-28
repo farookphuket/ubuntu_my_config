@@ -1,6 +1,10 @@
 #!/bin/bash
 
 
+# update the system first 
+apt update && apt upgrade -yy
+
+
 apt install feh fonts-font-awesome rofi pulseaudio-utils xbacklight -yy 
 
 apt install alsa-tools  -yy

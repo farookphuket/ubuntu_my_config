@@ -5,7 +5,7 @@
 #ICON_DIR=../FILES_INC_Icons
 # ZSH_DIR=../FILES_INC_ZSH
 #FONTS_DIR=../FILES_INC_FONTS
-FILES=files
+FILES_DIR=files
 
 echo "========= this will download wall paper please be patiently ========="
 echo " Dear $USER "
@@ -39,8 +39,23 @@ git clone https://gitlab.com/farookphuket/my_icons.git
 ICONS_DIR=~/TEMP_FILES/my_icons/icons
 THEMES_DIR=~/TEMP_FILES/my_icons/themes
 
-sudo cp -r $ICONS_DIR/ /usr/share/icons 
-sudo cp -r $THEMES_DIR/ /usr/share/themes 
+
+# icons 
+# Infinity-Dark-Icons
+# whiskermenu-manjaro.svg
+# Lyra-red-dark
+# Mintjaro
+# RevengeShip
+sudo cp -r $ICONS_DIR/whiskermenu-manjaro.svg /usr/share/icons 
+
+sudo cp -r $ICONS_DIR/RevengeShip /usr/share/icons 
+
+sudo cp -r $ICONS_DIR/Mintjaro /usr/share/icons 
+
+
+# Themes
+# Raleigh
+sudo cp -r $THEMES_DIR/Raleigh /usr/share/themes 
 
 
 sleep 5s
