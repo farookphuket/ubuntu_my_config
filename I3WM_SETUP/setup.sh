@@ -34,9 +34,6 @@ FILES_DIR=files
 # cmus config
 cp $FILES_DIR/update-cmus-library.sh ~/.config/cmus
 
-# at the time after we install the folder i3 is not yet create
-mkdir -p ~/.config/i3/
-
 # main i3 config
 cp $FILES_DIR/config ~/.config/i3/ 
 

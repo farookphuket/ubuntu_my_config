@@ -4,6 +4,7 @@
 mkdir -p ~/Documents/VIM_CONFIG.old
 BACKUP_DIR=~/Documents/VIM_CONFIG.old
 
+ZSH_DIR=../../FILES_INC_ZSH
 
 echo "=============== Dear $USER ========================="
 echo " this will change your vim config file "
@@ -51,3 +52,5 @@ cp .bashrc ~/
 # copy .tmux.conf to home folder
 cp .tmux.conf ~/
 
+# copy .zshrc to home folder
+cp $ZSH_DIR/.zshrc ~/

@@ -10,17 +10,14 @@ FONTS_DIR=../FILES_INC_FONTS
 FILES=files
 
 # copy Icons
-#cp -r $ICON_DIR/Icons/Lyra-red/ /usr/share/icons/ 
-#cp -r $ICON_DIR/Icons/Lyra-red-dark/ /usr/share/icons/ 
-#cp -r $ICON_DIR/Icons/Infinity-Dark-Icons/ /usr/share/icons/ 
-#cp -r $ICON_DIR/Icons/Cyan-Breeze-Dark-Icons /usr/share/icons 
+cp -r $ICON_DIR/Icons/Lyra-red/ /usr/share/icons/ 
+cp -r $ICON_DIR/Icons/Lyra-red-dark/ /usr/share/icons/ 
+cp -r $ICON_DIR/Icons/Infinity-Dark-Icons/ /usr/share/icons/ 
+cp -r $ICON_DIR/Icons/Cyan-Breeze-Dark-Icons /usr/share/icons 
 
 # i3Status
 cp $FILES/i3status.conf /etc/
 
-# copy fonts 
-cp -r $FONTS_DIR/ /usr/share/fonts/THAI_FONTS
-
 # copy zsh 
-#cp -r $ZSH_DIR/zsh /usr/share/
-#cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share/
+cp -r $ZSH_DIR/zsh /usr/share/
+cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share/
