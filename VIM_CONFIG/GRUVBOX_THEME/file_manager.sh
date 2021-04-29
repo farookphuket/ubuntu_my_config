@@ -4,13 +4,45 @@
 mkdir -p ~/Documents/VIM_CONFIG.old
 BACKUP_DIR=~/Documents/VIM_CONFIG.old
 
-ZSH_DIR=../../FILES_INC_ZSH
 
 echo "=============== Dear $USER ========================="
 echo " this will change your vim config file "
 echo " if you want your config back please check in "
 echo " $BACKUP_DIR "
 echo " ===================================================="
+
+
+if [[ -d ~/TEMP_FILES ]] && [[ -n `ls -A ~/TEMP_FILES` ]]; then 
+
+    # copy zsh config to /usr/share
+    sudo cp -r ~/TEMP_FILES/my_zsh/ZSH/zsh /usr/share
+    sudo cp -r ~/TEMP_FILES/my_zsh/ZSH/zsh-theme-powerlevel10k /usr/share
+    
+fi
+# create dir in user home 
+mkdir -p  ~/TEMP_FILES
+
+# cd into dir
+pushd ~/TEMP_FILES 
+
+# clone zsh theme
+git clone https://gitlab.com/farookphuket/my_zsh.git 
+
+ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH
+
+cp $ZSH_DIR/.zshrc ~/
+
+# copy zsh config to /usr/share
+sudo cp -r $ZSH_DIR/zsh /usr/share
+sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share
+
+sleep 5s 
+
+
+
+
+
+
 
 # check if .vim directory exited then make a back-up
 if [[ -d ~/.vim ]]; then
@@ -52,5 +84,3 @@ cp .bashrc ~/
 # copy .tmux.conf to home folder
 cp .tmux.conf ~/
 
-# copy .zshrc to home folder
-cp $ZSH_DIR/.zshrc ~/

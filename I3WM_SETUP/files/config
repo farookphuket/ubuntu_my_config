@@ -93,7 +93,7 @@ exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
 
 
 # conky setup
-exec --no-startup-id conky -c ~/.config/conky/.conkyrc
+exec --no-startup-id conky -c ~/.config/conky/conky.conf
 
 
 

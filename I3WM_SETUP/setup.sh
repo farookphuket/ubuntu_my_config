@@ -34,7 +34,10 @@ FILES_DIR=files
 # cmus config
 cp $FILES_DIR/update-cmus-library.sh ~/.config/cmus
 
-# main i3 config
+# at the time after we install the folder i3 is not yet create
+mkdir -p ~/.config/i3/
+
+# copy main i3 config to ~/.config/i3
 cp $FILES_DIR/config ~/.config/i3/ 
 
 # command for reboot shutdown

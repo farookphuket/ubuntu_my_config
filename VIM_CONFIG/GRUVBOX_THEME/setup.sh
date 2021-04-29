@@ -14,5 +14,10 @@ echo " #sudo ./file_manager_root.sh"
 echo " then re-run the script again."
 echo " ============ Operation has DONE! please logout =================="
 
+
+
+
+
+
 # sudo ./file_manager_root.sh 
 
