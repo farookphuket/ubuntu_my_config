@@ -50,7 +50,7 @@ apt install shutter -yy
 
 
 # install by snap 
-snap install pa-applet brave  
+snap install pa-applet brave unifonter
 
 apt install flameshot -yy
 
