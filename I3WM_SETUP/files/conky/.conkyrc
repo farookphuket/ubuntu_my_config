@@ -1,3 +1,7 @@
+
+# this is the old config for Ubuntu 20.04 and maybe a few older version
+# this config will not work on Ubuntu 21.04 
+# conky on Ubuntu 21.04 use conky.conf(/files/conky.conf) instead
 double_buffer yes
 
 #alignment middle_middle

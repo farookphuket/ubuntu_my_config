@@ -50,6 +50,8 @@ sudo cp -r $ICONS_DIR/whiskermenu-manjaro.svg /usr/share/icons
 
 sudo cp -r $ICONS_DIR/RevengeShip /usr/share/icons 
 
+sudo cp -r $ICONS_DIR/Lyra-red-dark /usr/share/icons 
+
 sudo cp -r $ICONS_DIR/Mintjaro /usr/share/icons 
 
 
