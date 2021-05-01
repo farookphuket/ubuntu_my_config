@@ -42,6 +42,11 @@ exec --no-startup-id blueman-tray
 exec --no-startup-id volumeicon
 
 
+# clipit has replace with diodon
+exec --no-startup-id diodon
+
+
+
 #  polkit  
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1
 
@@ -283,3 +288,7 @@ bar {
         status_command i3status
         position top
 }
+
+# show the gaps 
+gaps inner 4
+#gaps outer 4
