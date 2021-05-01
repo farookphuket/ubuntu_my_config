@@ -7,7 +7,7 @@ apt update && apt upgrade -yy
 
 apt install feh fonts-font-awesome rofi pulseaudio-utils xbacklight -yy 
 
-apt install alsa-tools  xdg-utils dunst  -yy
+apt install alsa-tools  xdg-utils dunst lxappearance-obconf -yy
 
 
 # keyboard indicator wallpaper 
@@ -35,7 +35,7 @@ apt install volumeicon-alsa -yy
 apt install policykit-1-gnome -yy
 
 # install gnome tweak tools as lxappearance not working in Ubuntu 21.04
-apt install gnome-tweaks gnome-shell-extensions -yy
+apt install gnome-tweaks gnome-shell-extension -yy
 
 apt install powerline-gitstatus -yy
 
@@ -48,7 +48,7 @@ add-apt-repository -y -u ppa:linuxuprising/shutter
 # install shutter 
 apt update && apt install shutter -yy
 
-
+# screen capture
 apt install flameshot -yy
 
 apt install mlocate -yy 
