@@ -15,7 +15,7 @@ apt install xxkb nitrogen pavucontrol blueman cmus -yy
 
 apt install lxsession lxappearance conky  -yy
 
-apt install i3-wm i3lock i3status lxsession plasma-desktop -yy
+apt install i3-wm i3lock i3lock-fancy i3status lxsession plasma-desktop -yy
 
 apt install zsh zsh-theme-powerlevel9k zsh-autosuggestions -yy
 

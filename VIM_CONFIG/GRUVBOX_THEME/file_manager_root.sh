@@ -10,4 +10,3 @@ cp -r ../nvim ~/
 
 cp .vimrc .tmux.conf .bashrc ~/
 
-cp ../../FILES_INC_ZSH/.zshrc ~/
