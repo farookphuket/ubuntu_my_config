@@ -66,7 +66,7 @@ updatedb
 # sleep 5
 sleep 5s
 
-
+apt autoremove -yy
 
 # copy the icons 
 ./file_manager_root.sh 
