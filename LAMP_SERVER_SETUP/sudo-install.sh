@@ -9,6 +9,8 @@ pkill firefox
 
 apt install apache2 composer cmake build-essential -yy
 
+#apt install apache2 composer cmake build-essential --fix-missing -yy
+
 
 ufw allow "Apache"
 
