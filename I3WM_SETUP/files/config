@@ -32,6 +32,9 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # ============================= my Custom start =====================
 
+
+
+
 # wifi 
 exec --no-startup-id nm-applet
 
@@ -40,6 +43,11 @@ exec --no-startup-id blueman-tray
 
 # date 22 Apt 2021 cannot adjust volume from the icon 
 exec --no-startup-id volumeicon
+
+
+# clipit has replace with diodon
+exec --no-startup-id diodon
+
 
 
 #  polkit  
@@ -57,6 +65,9 @@ bindsym $mod+m exec ~/.config/cmus/update-cmus-library.sh
 bindsym $mod+Ctrl+m exec pavucontrol
 
 
+# lock screen 
+#bindsym $mod+l exec i3lock -t -i ~/Pictures/Wallpapers/w1.png
+bindsym $mod+End exec i3lock-fancy
 
 # screen capture 
 bindsym Print exec flameshot gui
@@ -88,6 +99,10 @@ bindsym $mod+9 exec gnome-terminal -- ~/.config/i3/command/reboot.sh
 
 # start feh on reboot
 exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
+# don't like the wallpaper change from reboot or logout comment the above line 
+
+# restore the same wallpaper 
+#exec --no-startup-id nitrogen --restore
 
 
 
@@ -283,3 +298,7 @@ bar {
         status_command i3status
         position top
 }
+
+# show the gaps 
+gaps inner 4
+#gaps outer 4
