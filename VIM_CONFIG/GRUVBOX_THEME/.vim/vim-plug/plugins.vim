@@ -27,9 +27,12 @@ Plug 'mbbill/undotree'
 
 Plug 'sheerun/vim-polyglot'
 
-"Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
+" need to run this two command
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+
 
 Plug 'vuciv/vim-bujo'
 

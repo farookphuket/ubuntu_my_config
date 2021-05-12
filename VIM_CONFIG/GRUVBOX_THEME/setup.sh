@@ -1,5 +1,12 @@
 #!/bin/bash 
 
+
+
+# we have to run update just in case some package need to be update
+sudo apt update && sudo apt upgrade -yy
+
+# install the require program
+sudo ./install_require_app.sh
 # run copy file into home folder
 ./file_manager.sh 
 
