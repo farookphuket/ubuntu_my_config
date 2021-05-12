@@ -23,6 +23,8 @@ sudo ./sudo-install.sh
 # the sudo-install script will call file_manager_root script 
 # in order to copy files using root privileges
 
+# create folder for cmus
+mkdir -p ~/.config/cmus 
 
 # call cmus for the first run 
 gnome-terminal -- cmus
@@ -63,5 +65,7 @@ sleep 5s
 
 
 
-firefox -- "https://www.youtube.com/watch?v=q3Sanjl93dQ&list=PLWv3Eu4jXcQiwpZTKMZaFXB5L3dogTuCT&index=2"
+firefox -- "https://www.youtube.com/watch?v=q3Sanjl93dQ&list=PLWv3Eu4jXcQiwpZTKMZaFXB5L3dogTuCT&index=2" &
+
+
 #reboot

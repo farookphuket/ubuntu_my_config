@@ -35,7 +35,7 @@ apt install volumeicon-alsa -yy
 apt install policykit-1-gnome -yy
 
 # install gnome tweak tools as lxappearance not working in Ubuntu 21.04
-apt install gnome-tweaks gnome-shell-extension -yy
+apt install gnome-tweaks gnome-shell-extensions -yy
 
 apt install powerline-gitstatus -yy
 
