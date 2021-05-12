@@ -87,3 +87,6 @@ cp .bashrc ~/
 # copy .tmux.conf to home folder
 cp .tmux.conf ~/
 
+
+# copy nvim config 
+cp -r ../nvim ~/.config/

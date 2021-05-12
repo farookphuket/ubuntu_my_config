@@ -7,6 +7,7 @@ sudo apt update && sudo apt upgrade -yy
 
 # install the require program
 sudo ./install_require_app.sh
+
 # run copy file into home folder
 ./file_manager.sh 
 
