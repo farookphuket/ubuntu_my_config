@@ -35,8 +35,11 @@ apt update && apt install i3-gaps -yy
 # sleep 5
 sleep 5s
 
+# do dist-upgrade 
 apt update && apt dist-upgrade -yy
 
+# remove the orphan package
+apt autoremove -yy
 
 # copy the icons 
 ./file_manager_root.sh 

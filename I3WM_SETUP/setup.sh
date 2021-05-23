@@ -19,8 +19,6 @@ echo "=================================================================="
 
 
 
-
-
 # ============ this will install program on your machine =============
 # install the require program 
 sudo ./sudo-install.sh 
@@ -30,13 +28,26 @@ sudo ./sudo-install.sh
 
 
 
-# ========== will install the program that I use =====================
+
+
+# ==================== run install file ====================================== 
+# ============================================================================
+# 
+# this will take up-to 10 minute if you do not want to install all of this 
+# package which can be take too much time so just put the '#' sign infront of 
+# the below line
+./none-sudo-install.sh
+
+# ============================================================================
+
+
+# ========== will install the program that I use =============================
 # this will call the script that will install the program that 
 # I personally use that's why I comment the calling script 
 # so if you're okay with this you can just remove '#' from the below line
 #sudo ./program_other.sh
 
-# ===================================================================
+# ============================================================================
 
 
 # ====================== Cmus Music player =========================
