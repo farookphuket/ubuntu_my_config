@@ -111,5 +111,5 @@ popd
 # copy the config for xxkeyboard 
 cp $FILES_DIR/.xxkbrc ~/ 
 
-# copy the .zsh file 
-# cp $ZSH_DIR/.zshrc ~/ 
+# copy the zshrc for root file 
+sudo cp $FILES_DIR/zshrc /etc/zsh/

@@ -34,6 +34,11 @@ apt install lxappearance lxappearance-obconf  -yy
 apt install zsh zsh-theme-powerlevel9k zsh-autosuggestions -yy
 apt install zsh-syntax-highlighting zsh-antigen -yy
 
+
+# copy the zshrc config file 26 May 2021
+cp files/zshrc /etc/zsh/
+
+
 # ======================================================================
 
 
