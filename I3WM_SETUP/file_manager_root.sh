@@ -14,4 +14,4 @@ cp $FILES/i3status.conf /etc/
 
 
 #copy zsh config for root 26-may-2021
-cp $FILES/zshrc /etc/zsh/
+cp $FILES/zshrc /etc/zsh
