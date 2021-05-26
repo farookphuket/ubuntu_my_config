@@ -14,6 +14,8 @@ apt install alsa-tools  xdg-utils dunst conky -yy
 apt install xxkb nitrogen pavucontrol  -yy
 
 
+apt install curl -yy
+
 apt install i3-wm i3lock i3lock-fancy i3status lxsession plasma-desktop -yy
 
 # only can show the volume icon but cannot adjust sound

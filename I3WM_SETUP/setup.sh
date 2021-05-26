@@ -2,31 +2,32 @@
 
 
 
-echo "================= Install and setup I3Wm by farook =============="
-echo "================= For Ubuntu ,Debian ,Linux Mint  ==============="
+echo "================= Install and setup I3Wm by farook ====================="
+echo "================= For Ubuntu ,Debian ,Linux Mint  ======================"
 echo "================= Warning ❗========"
 echo " this script will install some require program for you "
-echo " it may take up to 20 minute (it's really depending upon your "
+echo " it may take up to 1 hour 30 minute (it's really depending upon your "
 echo " your internet connection in my case I need 1 and half hour )"
 echo " for this to be done) it's seem like I cannot do anything here" 
 echo " so please wait and be patiently "
-echo " ================================================================="
+echo " ======================================================================="
 echo " during the installation you may have to enter your password"
 echo " you may have to logout after the process has done "
-echo "=================================================================="
-
-./file-manager.sh
+echo "========================================================================"
 
 
 
-# ============ this will install program on your machine =============
+
+# ============ this will install program on your machine =====================
 # install the require program 
 sudo ./sudo-install.sh 
 # the sudo-install script will call file_manager_root script 
 # in order to copy files using root privileges
 
 
-
+# ============ COPY FILE =====================================================
+# this will copy the file this will take 40 minute
+./file-manager.sh
 
 
 
@@ -41,9 +42,13 @@ sudo ./sudo-install.sh
 # ============================================================================
 
 
+
+
+# ============================================================================
 # ========== will install the program that I use =============================
 # this will call the script that will install the program that 
 # I personally use that's why I comment the calling script 
+# this script alone can be take upto 30 minute 
 # so if you're okay with this you can just remove '#' from the below line
 #sudo ./program_other.sh
 
@@ -78,21 +83,22 @@ cp -r $FILES_DIR/conky ~/.config/
 
 
 
-# ================ Warning! ========================
+# ================ Warning! ===================================================
 # change to using zsh instead of bash
 #
 # if the line sudo ./program_other.sh is un-comment the below line will 
 # also need to be un-comment as well
 #
-# to change the SHELL to using zsh just remove '#' from the below line
+# un comment this line only if you un-comment the line 
+# ./program_other.sh from above as well
 #chsh -s /usr/bin/zsh 
 
 
 
-echo "================= ✅ your process has Done ! $USER  ============"
+echo "================= ✅ your process has Done ! $USER  ===================="
 echo " please logout and log back in using i3 session "
 echo " if you don't know how to please watch my video "
-echo "============================================================="
+echo "========================================================================"
 
 
 sleep 5s 

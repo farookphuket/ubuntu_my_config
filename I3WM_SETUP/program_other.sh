@@ -3,13 +3,13 @@
 
 
 
-echo "===============  ❗Warning ========================================="
-echo " this SCRIPT will install the program onto your system"
+echo "===============  ❗Warning ============================================="
+echo " this SCRIPT will install the program onto your system "
 echo " this operation will be take up to 40 minute (depending "
 echo " upon your internet speed but mostly when I do it on my  "
 echo " system is always took me 1 and half hour to be done)."
 echo " there is nothing we can do with this so....please wait "
-echo " ================================================================"
+echo " ======================================================================="
 
 sleep 5s
 
@@ -53,7 +53,7 @@ apt install  powerline -yy
 
 # gnome programs
 apt install gnome-characters gnome-terminal-data -yy
-apt install gnome-terminal xfce4-there -yy
+apt install gnome-terminal xfce4-terminal -yy
 
 
 
@@ -85,7 +85,17 @@ apt install mlocate -yy
 updatedb
 
 
+
+
+echo "=================  RUN snap install for $USER =========================="
+echo " this process will be take upto 40 minute it's depending upon your "
+echo " internet please be patiently "
+echo " "
+echo "========================================================================"
+
+sleep 5s
+
 # the command here will be take over 30 minute
 # install by snap 
-snap install pa-applet brave unifonter puddletag-snap
+snap install pa-applet brave unifonter puddletag-snap  
 

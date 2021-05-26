@@ -7,12 +7,12 @@
 #FONTS_DIR=../FILES_INC_FONTS
 FILES_DIR=files
 
-echo "========= this will download wall paper please be patiently ========="
-echo " Dear $USER "
+echo "========= this will download wall paper please be patiently ============"
+echo " Dear $USER  this operation can be take upto 40 minute or 1 hour"
 echo " the operation now is dowloading the Icons,wallpaper and themes now"
 echo " this process is will be depending up on your connection speed!"
 echo " please wait..."
-echo "======================================================================"
+echo "========================================================================"
 
 # create dir in user home 
 mkdir -p  ~/TEMP_FILES
