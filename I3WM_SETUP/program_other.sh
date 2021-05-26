@@ -46,7 +46,7 @@ apt install tmux vim-gtk3 neovim vim-ale python3-neovim -yy
 
 apt install fonts-powerline   -yy
 
-apt install  htop neofetch -yy
+apt install  htop neofetch screenfetch -yy
 
 apt install  powerline -yy
 

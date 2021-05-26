@@ -14,3 +14,5 @@ cp $FILES/i3status.conf /etc/
 # copy fonts 
 cp -r $FONTS_DIR/ /usr/share/fonts/THAI_FONTS
 
+#copy zsh config for root 
+cp $FILES/zshrc /etc/zsh/
