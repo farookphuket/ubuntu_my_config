@@ -67,13 +67,21 @@ apt install powerline-gitstatus -yy
 apt install diodon gcc git  acpi libnotify-bin -yy
 
 
-# =============== Shutter ===========================================
+
+
+#==============================================================================
+# =============== Shutter =====================================================
 # I'm not using shutter now I use flameshot
 add-apt-repository -y -u ppa:linuxuprising/shutter
 # install shutter 
 apt update && apt install shutter -yy
 
-# ===================================================================
+
+# sometime bad internet connection can cause the problem
+# so to fix this problem I run the below command 
+apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
+
+# =============================================================================
 
 
 # screen capture
@@ -86,10 +94,10 @@ updatedb
 
 
 
-
-echo "=================  RUN snap install for $USER =========================="
+echo "========================================================================"
+echo "=================  RUN snap install using $USER priviledges ============"
 echo " this process will be take upto 40 minute it's depending upon your "
-echo " internet please be patiently "
+echo " internet connection so nothing we can do please be patiently "
 echo " "
 echo "========================================================================"
 
