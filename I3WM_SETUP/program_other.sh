@@ -22,14 +22,14 @@ apt update && apt upgrade -yy
 apt install blueman -yy
 
 
-# =========================================================================
+# =============================================================================
 # this not working in Ubuntu 21.04 but you can use plasma-desktop instead
 # 
 apt install lxappearance lxappearance-obconf  -yy
 
-# ========================================================================
+# =============================================================================
 
-# =======================================================================
+# =============================================================================
 # zsh shell and theme
 apt install zsh zsh-theme-powerlevel9k zsh-autosuggestions -yy
 apt install zsh-syntax-highlighting zsh-antigen -yy
@@ -39,7 +39,7 @@ apt install zsh-syntax-highlighting zsh-antigen -yy
 cp files/zshrc /etc/zsh/
 
 
-# ======================================================================
+# =============================================================================
 
 
 # nodejs npm 
