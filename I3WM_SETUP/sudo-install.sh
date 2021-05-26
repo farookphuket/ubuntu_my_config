@@ -18,6 +18,12 @@ apt install curl -yy
 
 apt install i3-wm i3lock i3lock-fancy i3status lxsession plasma-desktop -yy
 
+apt update && apt upgrade -yy && apt install plasma-desktop --fix-missing -yy
+
+
+# I need to use this terminal
+apt install konsole gnome-terminal xfce4-terminal -yy
+
 # only can show the volume icon but cannot adjust sound
 apt install volumeicon-alsa cmus -yy
 

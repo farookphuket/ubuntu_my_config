@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash
 
 
 
@@ -18,13 +18,13 @@ sleep 5s
 apt update && apt upgrade -yy
 
 
-# blueman is blutooth program 
+# blueman is blutooth program
 apt install blueman -yy
 
 
 # =============================================================================
 # this not working in Ubuntu 21.04 but you can use plasma-desktop instead
-# 
+#
 apt install lxappearance lxappearance-obconf  -yy
 
 # =============================================================================
@@ -42,11 +42,11 @@ cp files/zshrc /etc/zsh/
 # =============================================================================
 
 
-# nodejs npm 
+# nodejs npm
 apt install nodejs npm -yy
 
 
-# I personally love vim ,vim is my editor 
+# I personally love vim ,vim is my editor
 apt install tmux vim-gtk3 neovim vim-ale python3-neovim -yy
 
 apt install fonts-powerline   -yy
@@ -59,6 +59,7 @@ apt install  powerline -yy
 # gnome programs
 apt install gnome-characters gnome-terminal-data -yy
 apt install gnome-terminal xfce4-terminal -yy
+apt install xfce4-power-manager xfce4-power-manager-plugins -yy
 
 
 
@@ -78,12 +79,12 @@ apt install diodon gcc git  acpi libnotify-bin -yy
 # =============== Shutter =====================================================
 # I'm not using shutter now I use flameshot
 add-apt-repository -y -u ppa:linuxuprising/shutter
-# install shutter 
+# install shutter
 apt update && apt install shutter -yy
 
 
 # sometime bad internet connection can cause the problem
-# so to fix this problem I run the below command 
+# so to fix this problem I run the below command
 apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
 
 # =============================================================================
@@ -92,7 +93,7 @@ apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
 # screen capture
 apt install flameshot -yy
 
-apt install mlocate -yy 
+apt install mlocate -yy
 
 
 updatedb
@@ -109,6 +110,6 @@ echo "========================================================================"
 sleep 5s
 
 # the command here will be take over 30 minute
-# install by snap 
-snap install pa-applet brave unifonter puddletag-snap  
+# install by snap
+snap install pa-applet brave unifonter puddletag-snap
 
