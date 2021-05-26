@@ -52,12 +52,33 @@ sudo cp -r $ICONS_DIR/RevengeShip /usr/share/icons
 
 sudo cp -r $ICONS_DIR/Lyra-red-dark /usr/share/icons 
 
+sudo cp -r $ICONS_DIR/Lyra-red /usr/share/icons 
+
 sudo cp -r $ICONS_DIR/Mintjaro /usr/share/icons 
 
 
 # Themes
 # Raleigh
-sudo cp -r $THEMES_DIR/Raleigh /usr/share/themes 
+# HighContrast
+
+sudo cp -r $THEMES_DIR/Raleigh/ /usr/share/themes/ 
+sudo cp -r $THEMES_DIR/HighContrast/ /usr/share/themes/
+
+
+
+
+# clone fonts from gitlab 
+git clone https://gitlab.com/farookphuket/my_fonts.git
+
+# fonts dir [3270 Hack TH-FONT]
+
+
+FONTS_DIR=~/TEMP_FILES/my_fonts/FONTS
+
+# copy font to /usr/share/fonts
+sudo cp -r $FONTS_DIR/3270/ /usr/share/fonts/
+sudo cp -r $FONTS_DIR/Hack/ /usr/share/fonts/
+sudo cp -r $FONTS_DIR/TH-FONT/ /usr/share/fonts/
 
 
 sleep 5s

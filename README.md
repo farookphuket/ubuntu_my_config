@@ -1,6 +1,24 @@
 # ubuntu_my_config
-> last update 12 May 2021
-> my config I use in Ubuntu
+
+> my config I use in Ubuntu 
+
+
+
+> since I start to use I3WM I tried to do some config in the way that I want 
+> my config to be 
+
+
+
+
+
+
+--- 
+
+# last update status 
+
+> last update 26 May 2021 remove font from this dir then added font from 
+> gitlab.com file size is 70+ MB 
+
 
 
 
