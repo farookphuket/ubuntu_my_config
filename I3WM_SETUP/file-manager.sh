@@ -27,8 +27,7 @@ ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH/FOR_UBUNTU
 
 cp $ZSH_DIR/.zshrc ~/
 
-# copy zsh config to home folder
-cp -r $ZSH_DIR/powerlevel10k/ ~/
+
 
 # copy zsh config to /usr/share
 sudo cp -r $ZSH_DIR/zsh/ /usr/share/
@@ -95,7 +94,11 @@ sleep 5s
 popd
 
 
+# create folder for powerlevel10k zsh theme
+mkdir -p ~/powerlevel10k 
 
+# copy the file into it 
+cp files/powerlevel10k.zsh-theme ~/powerlevel10k/ 
 
 
 # check if the Wallpapers dir is exited
