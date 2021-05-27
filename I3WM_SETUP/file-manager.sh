@@ -23,13 +23,13 @@ pushd ~/TEMP_FILES
 # clone zsh theme
 git clone https://gitlab.com/farookphuket/my_zsh.git 
 
-ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH
+ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH/FOR_UBUNTU
 
 cp $ZSH_DIR/.zshrc ~/
 
 # copy zsh config to /usr/share
-sudo cp -r $ZSH_DIR/zsh /usr/share
-sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share
+sudo cp -r $ZSH_DIR/zsh/ /usr/share/
+#sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share
 
 sleep 5s 
 
