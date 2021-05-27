@@ -27,9 +27,17 @@ ZSH_DIR=~/TEMP_FILES/my_zsh/ZSH/FOR_UBUNTU
 
 cp $ZSH_DIR/.zshrc ~/
 
+# copy zsh config to home folder
+cp -r $ZSH_DIR/powerlevel10k/ ~/
+
 # copy zsh config to /usr/share
 sudo cp -r $ZSH_DIR/zsh/ /usr/share/
-#sudo cp -r $ZSH_DIR/zsh-theme-powerlevel10k /usr/share
+
+# copy the zsh-theme
+sudo cp -r ~/TEMP_FILES/my_zsh/ZSH/zsh-theme-powerlevel10k /usr/share
+
+
+
 
 sleep 5s 
 

@@ -10,6 +10,10 @@ echo " it may take up to 1 hour 30 minute (it's really depending upon your "
 echo " your internet connection in my case I need 1 and half hour )"
 echo " for this to be done) it's seem like I cannot do anything here" 
 echo " so please wait and be patiently "
+echo ""
+echo " if 1 hour and half is too much for you please quit this script"
+echo " by pressing Ctrl+c "
+echo ""
 echo " ======================================================================="
 echo " during the installation you may have to enter your password"
 echo " you may have to logout after the process has done "
@@ -26,7 +30,7 @@ sudo ./sudo-install.sh
 
 
 # ============ COPY FILE =====================================================
-# this will copy the file this will take some time
+# this will copy the file this will take 40 minute
 ./file-manager.sh
 
 
@@ -34,7 +38,7 @@ sudo ./sudo-install.sh
 # ==================== run install file ====================================== 
 # ============================================================================
 # 
-# this will take up-to 30 minute if you do not want to install all of this 
+# this will take up-to 10 minute if you do not want to install all of this 
 # package which can be take too much time so just put the '#' sign infront of 
 # the below line
 ./none-sudo-install.sh
@@ -50,7 +54,7 @@ sudo ./sudo-install.sh
 # I personally use that's why I comment the calling script 
 # this script alone can be take upto 30 minute 
 # so if you're okay with this you can just remove '#' from the below line
-#sudo ./program_other.sh
+sudo ./program_other.sh
 
 # ============================================================================
 
@@ -91,7 +95,7 @@ cp -r $FILES_DIR/conky ~/.config/
 #
 # un comment this line only if you un-comment the line 
 # ./program_other.sh from above as well
-#chsh -s /usr/bin/zsh 
+chsh -s /usr/bin/zsh 
 
 
 
