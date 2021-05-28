@@ -15,11 +15,6 @@ fi
 # copy the .vim config dir to ~/
 cp -r .vim ~/
 
-# make plugin dir for vim-prettier
-mkdir -p ~/.vim/pack/plugins/start
-
-# clone it content into it dir
-git clone https://github.com/prettier/vim-prettier ~/.vim/pack/plugins/start/vim-prettier
 
 
 
