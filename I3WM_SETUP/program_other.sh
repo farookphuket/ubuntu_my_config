@@ -73,6 +73,9 @@ apt install powerline-gitstatus -yy
 apt install diodon gcc git  acpi libnotify-bin -yy
 
 
+apt install inkscape -yy
+
+
 
 
 #==============================================================================
