@@ -20,6 +20,8 @@ apt install i3-wm i3lock i3lock-fancy i3status lxsession plasma-desktop -yy
 
 apt update && apt upgrade -yy && apt install plasma-desktop --fix-missing -yy
 
+# power manager 
+apt install xfce4-power-manager -yy
 
 # I need to use this terminal
 apt install konsole gnome-terminal xfce4-terminal -yy
