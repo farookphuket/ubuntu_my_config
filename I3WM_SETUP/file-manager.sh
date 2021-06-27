@@ -2,11 +2,11 @@
 
 
 
-#ICON_DIR=../FILES_INC_Icons
-# ZSH_DIR=../FILES_INC_ZSH
-#FONTS_DIR=../FILES_INC_FONTS
 FILES_DIR=files
 
+
+
+echo "========================================================================"
 echo "========= this will download wall paper please be patiently ============"
 echo " Dear $USER  this operation can be take upto 40 minute or 1 hour"
 echo " the operation now is dowloading the Icons,wallpaper and themes now"

@@ -13,6 +13,8 @@ apt install alsa-tools  xdg-utils dunst conky -yy
 # keyboard indicator wallpaper 
 apt install xxkb nitrogen pavucontrol  -yy
 
+# install aradr 27 June 2021
+apt install arandr -yy
 
 apt install curl -yy
 
