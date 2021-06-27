@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 
 
 # clipit
-exec --no-startup-id clipit
+exec --no-startup-id diodon
 
 
 # power-manager
