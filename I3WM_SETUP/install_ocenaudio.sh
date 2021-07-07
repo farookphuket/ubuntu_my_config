@@ -10,7 +10,7 @@ pushd ~/Downloads/
 # call firefox to open the download link 
 firefox -- https://www.ocenaudio.com/start_download/ocenaudio_debian9_64.deb
 
-sudo dbkg -i ocenaudio_debian9_64_3.10.9.deb 
+sudo dpkg -i ocenaudio_debian9_64_3.10.9.deb 
 
 
 
