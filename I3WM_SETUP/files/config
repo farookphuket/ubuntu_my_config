@@ -99,21 +99,21 @@ bindsym $mod+9 exec gnome-terminal -- ~/.config/i3/command/reboot.sh
 exec --no-startup-id feh --randomize --bg-scale ~/Pictures/Wallpapers/*
 
 
+# ================================ full screen ================================
+# if testing this in the virt-manager most of the time the full screen will 
+# not working so I have this small script to fix it 
+#exec --no-startup-id ~/.config/i3/command/virtual_display.sh
+# =============================================================================
 
 
 # conky setup
-exec --no-startup-id conky -c ~/.config/conky/.conkyrc
+#exec --no-startup-id conky -c ~/.config/conky/.conkyrc
 
 # =============================================================================
 # date 26 June 2021 conky not start by the above script 
 # so I have wrote the small script to fix it
 exec --no-startup-id ~/.config/conky/start_conky.sh
 
-# ================================ full screen ================================
-# if testing this in the virt-manager most of the time the full screen will 
-# not working so I have this small script to fix it 
-#exec --no-startup-id ~/.config/i3/command/virtual_display.sh
-# =============================================================================
 
 # =============================================================================
 # language applet
