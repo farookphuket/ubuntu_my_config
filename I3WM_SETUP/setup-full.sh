@@ -98,6 +98,12 @@ cp -r $FILES_DIR/conky ~/.config/
 chsh -s /usr/bin/zsh 
 
 
+# =============== ocenaudio install ===========================================
+pushd ~/Downloads/ 
+sudo dpkg -i ocenaudio_debian9_64_3.10.9.deb 
+popd 
+
+# =============================================================================
 
 echo "================= ✅ your process has Done ! $USER  ===================="
 echo " please logout and log back in using i3 session "
