@@ -76,6 +76,11 @@ apt install diodon gcc git  acpi libnotify-bin -yy
 apt install inkscape -yy
 
 
+# =============== twin panel file browser krusader 10 July 2021 ===============
+apt install krusader -yy
+# =============== twin panel file browser krusader 10 July 2021 ===============
+
+
 # =============================================================================
 # date 26 June 2021 I will replace virtualbox with virt-manager qemu
 # as it is much more elegance 
