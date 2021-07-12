@@ -67,9 +67,15 @@ bindsym $mod+Ctrl+m exec pavucontrol
 
 
 
+# =============================================================================
 # screen capture
-bindsym Print exec flameshot gui
+#bindsym Print exec flameshot gui
+#bindsym $mod+Print exec flameshot launcher
+# flameshot has been remove 13 Jul 2021
 
+bindsym Print exec spectacle
+
+# =============================================================================
 
 
 # kill window

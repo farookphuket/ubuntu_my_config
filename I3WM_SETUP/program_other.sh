@@ -107,8 +107,12 @@ apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
 # =============================================================================
 
 
+
 # screen capture
-apt install flameshot -yy
+# apt install flameshot -yy
+
+# flameshot has been replace with spectacle on 13 Jul 2021 
+apt install kde-spectacle -yy
 
 apt install mlocate -yy
 
