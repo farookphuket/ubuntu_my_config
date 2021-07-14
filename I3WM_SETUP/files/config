@@ -310,3 +310,18 @@ bar {
         status_command i3status
         position top
 }
+
+
+
+
+# ================================== floating window rule =====================
+# ===================== date 14 Jul 2021 ======================================
+
+
+# Open specific applications in floating mode
+for_window [class="(?i)virt-manager"] floating enable border normal
+
+# ================================== floating window rule =====================
+
+# switch to workspace with urgent window automatically
+for_window [urgent=latest] focus
