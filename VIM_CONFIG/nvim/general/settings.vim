@@ -61,3 +61,20 @@ nnoremap <c-c> :if (hlstate%2 == 0) \| nohlsearch \| else \| set hlsearch \| end
 
 " You can't stop me
 "cmap w!! w !sudo tee %
+
+augroup highlight_yank
+
+    autocmd!
+
+    autocmd TextYankPost * silent! lua require'vim.highlight'.on_yank("IncSearch", 50)
+
+augroup END
+
+" auto save file 25-Jul-2021
+augroup FAROOK
+    autocmd!
+    autocmd CursorHold  * update
+
+augroup END
+
+
