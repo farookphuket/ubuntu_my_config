@@ -80,6 +80,12 @@ apt install inkscape -yy
 apt install krusader -yy
 # =============== twin panel file browser krusader 10 July 2021 ===============
 
+# ====================== date 29 Jul 2021      ================================
+# knotes is the sticky note program 
+apt install knotes -yy
+# =============================================================================
+
+
 
 # =============================================================================
 # date 26 June 2021 I will replace virtualbox with virt-manager qemu
