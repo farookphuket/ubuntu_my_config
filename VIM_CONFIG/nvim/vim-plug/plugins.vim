@@ -43,6 +43,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
 
 
+" SuperTap 05-Aug-2021
+Plug 'ervandew/supertab'
 
 
 call plug#end()
