@@ -13,6 +13,8 @@ apt install alsa-tools  xdg-utils dunst conky -yy
 # keyboard indicator wallpaper 
 apt install xxkb nitrogen pavucontrol  -yy
 
+# install aradr 27 June 2021
+apt install arandr -yy
 
 apt install curl -yy
 
@@ -20,6 +22,8 @@ apt install i3-wm i3lock i3lock-fancy i3status lxsession plasma-desktop -yy
 
 apt update && apt upgrade -yy && apt install plasma-desktop --fix-missing -yy
 
+# power manager 
+apt install xfce4-power-manager -yy
 
 # I need to use this terminal
 apt install konsole gnome-terminal xfce4-terminal -yy

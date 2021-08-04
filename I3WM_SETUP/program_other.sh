@@ -7,7 +7,7 @@ echo "===============  ❗Warning ============================================="
 echo " this SCRIPT will install the program onto your system "
 echo " this operation will be take up to 40 minute (depending "
 echo " upon your internet speed but mostly when I do it on my  "
-echo " system is always took me 1 and half hour to be done)."
+echo " system is always took me 1 hour and half  to be done)."
 echo " there is nothing we can do with this so....please wait "
 echo " ======================================================================="
 
@@ -76,16 +76,36 @@ apt install diodon gcc git  acpi libnotify-bin -yy
 apt install inkscape -yy
 
 
+# =============== twin panel file browser krusader 10 July 2021 ===============
+apt install krusader -yy
+# =============== twin panel file browser krusader 10 July 2021 ===============
+
+# ====================== date 29 Jul 2021      ================================
+# knotes is the sticky note program 
+apt install knotes -yy
+# =============================================================================
+
+
+
+# =============================================================================
+# date 26 June 2021 I will replace virtualbox with virt-manager qemu
+# as it is much more elegance 
+# comment this below line if you're not using virt-manager
+./install_virt-manager.sh
+
+# =============================================================================
+
 
 
 #==============================================================================
 # =============== Shutter =====================================================
-# I'm not using shutter now I use flameshot
+# I'm not using shutter now I use flameshot so if you don't want to you can 
+# comment the 2 lines below 
+
 add-apt-repository -y -u ppa:linuxuprising/shutter
-# install shutter
 apt update && apt install shutter -yy
 
-
+# =============================================================================
 # sometime bad internet connection can cause the problem
 # so to fix this problem I run the below command
 apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
@@ -93,8 +113,12 @@ apt update && apt upgrade -yy && apt install shutter --fix-missing -yy
 # =============================================================================
 
 
+
 # screen capture
-apt install flameshot -yy
+# apt install flameshot -yy
+
+# flameshot has been replace with spectacle on 13 Jul 2021 
+apt install kde-spectacle -yy
 
 apt install mlocate -yy
 
