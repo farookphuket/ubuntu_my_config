@@ -97,7 +97,8 @@ augroup FAROOK
     autocmd BufWritePre * :call TrimWhitespace()
 
  "   autocmd FileType typescript :call GoYCM()
-    autocmd FileType cpp,cxx,h,hpp,c,php,txt,html :call GoCoc()
+ "   this will leading error on tab press so NOT USE this 5 Aug 2021
+ "    autocmd FileType cpp,cxx,h,hpp,c,php,txt,html :call GoCoc()
 
     autocmd CursorHold  * update
 augroup END
