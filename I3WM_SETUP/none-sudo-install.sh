@@ -6,7 +6,7 @@
 
 
 # install spotify 
-./install_spotify.sh
+#./install_spotify.sh
 
 
 # ======================== ocenaudio ==========================================
