@@ -48,6 +48,16 @@ Successfully migrated and optimized the development environment from Arch Linux 
 
 ---
 
+## my ubuntu server 
+> to setup server timezone i ran ` sudo timedatectl set-timezone "Asia/Bangkok" ` while in Ubuntu Server
+> 1 Oct. 2026
+
+
+![my_ubuntu-server_oct2026](https://ia600801.us.archive.org/27/items/how-to_pic_cover/001_setup-server_timezone.png)
+
+
+
+
 ### My Ubuntu 21.04 Setup
 ![My Ubuntu 21.04](https://i.ibb.co/MGQqtMF/2021-04-27-ubuntu2104.png)
 

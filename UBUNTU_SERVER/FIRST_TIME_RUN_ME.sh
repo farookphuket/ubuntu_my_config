@@ -23,6 +23,7 @@ NEOVIM_VERSION="0.10.4"
 NEOVIM_URL="https://github.com/neovim/neovim/releases/download/v${NEOVIM_VERSION}/nvim-linux-x86_64.tar.gz"
 NERD_FONT_URL="https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip"
 P10K_GIT_URL="https://github.com/romkatv/powerlevel10k.git"
+TIMEZONE="Asia/Bangkok"  # Timezone ของ Arch Linux Host (UTC+7)
 
 # Colors for output
 RED='\033[0;31m'
@@ -195,9 +196,37 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# STEP 5: Install Nerd Fonts (JetBrains Mono)
+# STEP 5: Set System Timezone to Asia/Bangkok (UTC+7)
 # -----------------------------------------------------------------------------
-log_header " STEP 5: Installing Nerd Fonts (JetBrains Mono)"
+log_header " STEP 5: Setting Timezone to ${TIMEZONE}"
+
+CURRENT_TIMEZONE=$(timedatectl show -p Timezone --value 2>/dev/null || cat /etc/timezone 2>/dev/null || echo "Unknown")
+
+if [[ "$CURRENT_TIMEZONE" == "$TIMEZONE" ]]; then
+    log_info "Timezone is already set to $TIMEZONE - skipping"
+else
+    log_info "Current timezone: $CURRENT_TIMEZONE"
+    log_info "Changing timezone to $TIMEZONE..."
+    
+    # ตั้งค่า timezone
+    timedatectl set-timezone "$TIMEZONE"
+    
+    # ตรวจสอบผลลัพธ์
+    NEW_TIMEZONE=$(timedatectl show -p Timezone --value 2>/dev/null || echo "Failed")
+    
+    if [[ "$NEW_TIMEZONE" == "$TIMEZONE" ]]; then
+        log_success "Timezone changed to $TIMEZONE successfully"
+        log_info "Current time: $(date '+%Y-%m-%d %H:%M:%S %Z%z')"
+    else
+        log_warn "Failed to set timezone automatically. Please set manually with:"
+        log_warn "  sudo timedatectl set-timezone $TIMEZONE"
+    fi
+fi
+
+# -----------------------------------------------------------------------------
+# STEP 6: Install Nerd Fonts (JetBrains Mono)
+# -----------------------------------------------------------------------------
+log_header " STEP 6: Installing Nerd Fonts (JetBrains Mono)"
 
 USER_HOME="${SUDO_USER:+/home/$SUDO_USER}"
 USER_HOME="${USER_HOME:-$HOME}"
@@ -223,9 +252,9 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# STEP 6: Install Powerlevel10k (via Git)
+# STEP 7: Install Powerlevel10k (via Git)
 # -----------------------------------------------------------------------------
-log_header " STEP 6: Installing Powerlevel10k"
+log_header " STEP 7: Installing Powerlevel10k"
 
 if [[ -d "$USER_HOME/powerlevel10k" ]]; then
     log_info "Powerlevel10k is already installed - skipping"
@@ -236,9 +265,9 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# STEP 7: Install ZSH Plugins
+# STEP 8: Install ZSH Plugins
 # -----------------------------------------------------------------------------
-log_header "🔌 STEP 7: Installing ZSH Plugins"
+log_header "🔌 STEP 8: Installing ZSH Plugins"
 
 ZSH_PLUGINS=(
     zsh-autosuggestions
@@ -261,9 +290,9 @@ for plugin in "${ZSH_PLUGINS[@]}"; do
 done
 
 # -----------------------------------------------------------------------------
-# STEP 8: Set Default Shell to ZSH
+# STEP 9: Set Default Shell to ZSH
 # -----------------------------------------------------------------------------
-log_header "🐚 STEP 8: Setting Default Shell to ZSH"
+log_header " STEP 9: Setting Default Shell to ZSH"
 
 if [[ "$(getent passwd "$SUDO_USER" | cut -d: -f7)" == "$(which zsh)" ]]; then
     log_info "ZSH is already the default shell - skipping"
@@ -274,9 +303,9 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# STEP 9: Install Tmux Plugin Manager (TPM)
+# STEP 10: Install Tmux Plugin Manager (TPM)
 # -----------------------------------------------------------------------------
-log_header " STEP 9: Installing Tmux Plugin Manager (TPM)"
+log_header " STEP 10: Installing Tmux Plugin Manager (TPM)"
 
 TPM_DIR="$USER_HOME/.tmux/plugins/tpm"
 if [[ -d "$TPM_DIR" ]]; then
@@ -288,14 +317,14 @@ else
 fi
 
 # -----------------------------------------------------------------------------
-# STEP 10: Summary and Next Steps
+# STEP 11: Summary and Next Steps
 # -----------------------------------------------------------------------------
 log_header "🎉 Installation Complete!"
 
 echo -e "${GREEN}
 ══════════════════════════════════════════════════════╗
 ║  ✅ Basic installation completed successfully!      ║
-╚══════════════════════════════════════════════════════╝
+══════════════════════════════════════════════════════╝
 ${NC}"
 
 log_info "Next steps (manual actions required):"
@@ -321,4 +350,4 @@ echo "   tmux"
 echo "   Then press Ctrl+a followed by I (capital i)"
 echo ""
 
-log_success "Enjoy your Ubuntu Server! 🚀"
+log_success "Enjoy your Ubuntu Server! "
