@@ -29,7 +29,7 @@ Successfully migrated and optimized the development environment from Arch Linux 
 
 > the screen shot on 4 Oct. 2026 after 3 days no reboot
 
-![my_4-oct-2026_com-spec](https://archive.org/details/record_my_arch-linux/001_com-spec_4-oct-2026.png)
+![my_4-oct-2026_com-spec](https://ia902805.us.archive.org/11/items/record_my_arch-linux/001_com-spec_4-oct-2026.png)
 
 
 
